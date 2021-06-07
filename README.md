@@ -6,7 +6,7 @@ Stack: Java EE, Apache Tomcat, Servlet API, MySQL DB, JDBC, Java FX, Gson.
 
 ## Client part of the application
 
-(The server part is available at the link: https://github.com/dddumin/FencicngSchool)
+(The server part is available at the link: https://github.com/dddumin/FencingSchool)
 
 The client side of an application is a collection of graphical interface forms that interact with each other. From the forms, the API of the server application is addressed via an http connection, a request is sent to the server and a response is received from it in JSON format, then it is parsed and the results are displayed in the form of user interface elements. A set of forms and classes of the client side:
 
