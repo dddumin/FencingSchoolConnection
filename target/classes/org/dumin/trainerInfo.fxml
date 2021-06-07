@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dumin.TrainerInfoController">
+
+    <Label layoutX="14.0" layoutY="56.0" text="Фамилия" />
+    <Label layoutX="14.0" layoutY="95.0" text="Имя" />
+    <Label layoutX="14.0" layoutY="137.0" text="Отчество" />
+    <TextField fx:id="textFieldSurName" editable="false" layoutX="122.0" layoutY="52.0" prefHeight="25.0" prefWidth="112.0" />
+    <TextField fx:id="textFieldName" editable="false" layoutX="122.0" layoutY="91.0" prefHeight="25.0" prefWidth="112.0" />
+    <TextField fx:id="textFieldPatronymic" editable="false" layoutX="122.0" layoutY="133.0" prefHeight="25.0" prefWidth="112.0" />
+    <Label layoutX="14.0" layoutY="179.0" text="Опыт работы" />
+    <TextField fx:id="textFieldExperience" layoutX="122.0" layoutY="175.0" prefHeight="25.0" prefWidth="112.0" />
+    <Button layoutX="14.0" layoutY="226.0" mnemonicParsing="false" onAction="#updateTrainer" prefHeight="25.0" prefWidth="222.0" text="Обновить данные тренера" />
+    <Button layoutX="14.0" layoutY="277.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="222.0" text="Удалить тренера" />
+   <Label layoutX="367.0" layoutY="35.0" text="Расписание тренера" />
+   <TableView fx:id="tableViewSchedule" layoutX="253.0" layoutY="54.0" prefHeight="200.0" prefWidth="340.0" />
+   <Button layoutX="255.0" layoutY="277.0" mnemonicParsing="false" onAction="#addItemSchedule" prefHeight="25.0" prefWidth="112.0" text="Добавить запись" />
+   <Button layoutX="386.0" layoutY="277.0" mnemonicParsing="false" onAction="#deleteItemSchedule" prefHeight="25.0" prefWidth="112.0" text="Удалить запись" />
+</AnchorPane>

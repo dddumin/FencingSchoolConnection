@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dumin.AddTrainingController">
+   <children>
+      <ComboBox fx:id="comboBoxTrainer" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="570.0" />
+      <DatePicker fx:id="datePicker" editable="false" layoutX="7.0" layoutY="61.0" onAction="#setTime" visible="false" />
+      <Label fx:id="labelTime" layoutX="253.0" layoutY="65.0" text="Время тренировки: " visible="false" />
+      <Button fx:id="btnAdd" layoutX="16.0" layoutY="161.0" mnemonicParsing="false" onAction="#addTraining" prefHeight="25.0" prefWidth="157.0" text="Добавить тренировку" />
+      <Label layoutX="253.0" layoutY="100.0" text="Номер зала:" />
+      <TextField fx:id="textFieldNumber" layoutX="326.0" layoutY="96.0" prefHeight="25.0" prefWidth="37.0" />
+      <ComboBox fx:id="comboBoxTime" layoutX="382.0" layoutY="61.0" prefWidth="150.0" visible="false" />
+   </children>
+</AnchorPane>

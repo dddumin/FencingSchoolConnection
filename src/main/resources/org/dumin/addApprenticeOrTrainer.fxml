@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="253.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dumin.AddApprenticeOrTrainerController">
+   <children>
+      <Label layoutX="85.0" layoutY="56.0" text="Фамилия" />
+      <Label layoutX="85.0" layoutY="95.0" text="Имя" />
+      <Label layoutX="85.0" layoutY="137.0" text="Отчество" />
+      <TextField fx:id="textFieldSurName" layoutX="212.0" layoutY="52.0" />
+      <TextField fx:id="textFieldName" layoutX="212.0" layoutY="91.0" />
+      <TextField fx:id="textFieldPatronymic" layoutX="212.0" layoutY="133.0" />
+      <Label fx:id="labelVariableParameter" layoutX="85.0" layoutY="179.0" text="Номер телефона" />
+      <TextField fx:id="textFieldVariableParameter" layoutX="212.0" layoutY="175.0" />
+      <Button layoutX="212.0" layoutY="207.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="149.0" text="Создать" />
+      <RadioButton fx:id="radioBtnTrainer" layoutX="88.0" layoutY="14.0" mnemonicParsing="false" onAction="#setFormAddTrainer" text="Тренер" />
+      <RadioButton fx:id="radioBtnApprentice" layoutX="212.0" layoutY="14.0" mnemonicParsing="false" onAction="#setFormAddApprentice" selected="true" text="Ученик" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dumin.AuthorizationController">
+   <children>
+      <Button fx:id="btnSignIn" layoutX="275.0" layoutY="235.0" mnemonicParsing="false" onAction="#signIn" text="Войти" />
+      <Label layoutX="172.0" layoutY="167.0" text="Login" />
+      <TextField fx:id="textFieldLogin" layoutX="226.0" layoutY="163.0" />
+      <TextField fx:id="textFieldPassword" layoutX="226.0" layoutY="200.0" />
+      <Label layoutX="172.0" layoutY="204.0" text="Password" />
+      <Label fx:id="labelSignUp" layoutX="199.0" layoutY="271.0" onMouseClicked="#goToSignUpForm" text="Нажмите, чтобы зарегистрироваться" />
+   </children>
+</AnchorPane>
